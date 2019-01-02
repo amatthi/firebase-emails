@@ -1,6 +1,7 @@
 {
   "projects": {
     "production": "snippets-email",
-    "email": "eatapp-5215b"
+    "email": "eatapp-5215b",
+    "feedback-email": "eatapp-5215b"
   }
 }
