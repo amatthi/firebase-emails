@@ -1,5 +1,5 @@
 {
-  "name": "email-confirmation-functions",
+  "name": "email-confirmation-functions-feedback",
   "description": "Send Email confirmation upon sign up to a Mailing list Firebase Functions sample",
   "dependencies": {
     "nodemailer": "^2.4.1",

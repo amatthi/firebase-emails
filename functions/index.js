@@ -32,7 +32,7 @@ const mailTransport = nodemailer.createTransport({
 });
 
 // Sends an email confirmation when a user changes his mailing list subscription.
-exports.sendEmailAfterFeedback = functions.database.ref('/Feedback/{uid}/{uid}').onWrite(async (change) => {
+exports.sendEmailAfterFeedback = functions.database.ref('/Feedback/{uid}/{id}').onWrite(async (change) => {
   const snapshot = change.after;
   const val = snapshot.val();
 
@@ -48,7 +48,7 @@ exports.sendEmailAfterFeedback = functions.database.ref('/Feedback/{uid}/{uid}')
   //const subscribed = val.subscribedToMailingList;
 
   // Building Email message.
-  mailOptions.subject = 'Thanks for signing up to Snippets';  //for example
+  mailOptions.subject = 'New Feedback Received';  //for example
   mailOptions.text = val.text;
 
 
